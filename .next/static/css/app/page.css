@@ -1,0 +1,416 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./components/AudioUploader/AudioUploader.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+.AudioUploader_container__r2__o {
+  margin-bottom: 2rem;
+}
+
+.AudioUploader_dropZone__h92Kh {
+  border: 2px dashed #bdc3c7;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.AudioUploader_dropZone__h92Kh:hover,
+.AudioUploader_dragOver__mjpr0 {
+  border-color: #3498db;
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+.AudioUploader_uploadIcon__OEyJC {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.AudioUploader_dropZone__h92Kh h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.AudioUploader_dropZone__h92Kh p {
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+.AudioUploader_browseButton__i__9p {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.AudioUploader_browseButton__i__9p:hover {
+  background: #2980b9;
+}
+
+.AudioUploader_hiddenInput__ApsKp {
+  display: none;
+}
+
+.AudioUploader_error__OMhlt {
+  background: #e74c3c;
+  color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./components/AudioPlayer/AudioPlayer.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.AudioPlayer_container__ZGNw0 {
+  margin-bottom: 2rem;
+}
+
+.AudioPlayer_playerCard__H0Gub {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.AudioPlayer_fileInfo__nl1D6 {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.AudioPlayer_fileInfo__nl1D6 h3 {
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.AudioPlayer_fileInfo__nl1D6 p {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.AudioPlayer_controls__oAiXF {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.AudioPlayer_playButton__Q6URQ {
+  background: #3498db;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AudioPlayer_playButton__Q6URQ:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+.AudioPlayer_progressContainer__Cs_7u {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 1;
+}
+
+.AudioPlayer_progressBar__rehSv {
+  flex: 1 1;
+  height: 6px;
+  background: #ecf0f1;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.AudioPlayer_progressBar__rehSv::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #3498db;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.AudioPlayer_time__OTSFn {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  min-width: 40px;
+  text-align: center;
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./components/ProcessButton/ProcessButton.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+.ProcessButton_container__ogPn9 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.ProcessButton_processButton__J1kTw {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  min-height: 50px;
+}
+
+.ProcessButton_processButton__J1kTw:hover:not(.ProcessButton_disabled__trEFP) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+.ProcessButton_processButton__J1kTw.ProcessButton_disabled__trEFP {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.ProcessButton_processingContent__6bbU_ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.ProcessButton_spinner__TVP1N {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: ProcessButton_spin__s9qPL 1s linear infinite;
+}
+
+@keyframes ProcessButton_spin__s9qPL {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.ProcessButton_progressContainer__uk1QS {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ProcessButton_progressBar__4oK36 {
+  flex: 1 1;
+  height: 8px;
+  background: #ecf0f1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.ProcessButton_progressFill__w6cSp {
+  height: 100%;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  transition: width 0.3s ease;
+}
+
+.ProcessButton_progressText__Y63jH {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  min-width: 40px;
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./components/ResultsDisplay/ResultsDisplay.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+.ResultsDisplay_container__RwFK8 {
+  margin-top: 2rem;
+}
+
+.ResultsDisplay_resultsCard__abcCr {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ResultsDisplay_title__lnEOU {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.ResultsDisplay_overallScore__mIjfE {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ResultsDisplay_scoreCircle__Mj1Hp {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.ResultsDisplay_percentage__QkAaR {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ResultsDisplay_label__f_ZaT {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.ResultsDisplay_scoresSection__ecYtM {
+  margin-bottom: 2rem;
+}
+
+.ResultsDisplay_scoresSection__ecYtM h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.ResultsDisplay_scoresGrid__LC_lw {
+  display: grid;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.ResultsDisplay_scoreItem__6sv7X {
+  padding: 1rem;
+  border: 1px solid #ecf0f1;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.ResultsDisplay_scoreHeader__U9R63 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.ResultsDisplay_parameterName__ESI_r {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.ResultsDisplay_scoreValue___ogll {
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.ResultsDisplay_scoreGood__1tYgP {
+  background: #d5f4e6;
+  color: #27ae60;
+}
+
+.ResultsDisplay_scoreOkay__LoCgI {
+  background: #fef9e7;
+  color: #f39c12;
+}
+
+.ResultsDisplay_scorePoor__QTv2n {
+  background: #fadbd8;
+  color: #e74c3c;
+}
+
+.ResultsDisplay_scoreBar__MDLNg {
+  height: 6px;
+  background: #ecf0f1;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.ResultsDisplay_scoreBarFill__cBy5D {
+  height: 100%;
+  transition: width 0.5s ease;
+  border-radius: 3px;
+}
+
+.ResultsDisplay_scoreBarFill__cBy5D.ResultsDisplay_scoreGood__1tYgP {
+  background: #27ae60;
+}
+
+.ResultsDisplay_scoreBarFill__cBy5D.ResultsDisplay_scoreOkay__LoCgI {
+  background: #f39c12;
+}
+
+.ResultsDisplay_scoreBarFill__cBy5D.ResultsDisplay_scorePoor__QTv2n {
+  background: #e74c3c;
+}
+
+.ResultsDisplay_feedbackSection__2_EFa {
+  display: grid;
+  grid-gap: 1.5rem;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.ResultsDisplay_feedbackItem__t2Y1u h3 {
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.ResultsDisplay_feedbackContent__4asox {
+  background: #f8f9fa;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+.ResultsDisplay_transcriptionSection__SfK_l {
+  border-top: 1px solid #ecf0f1;
+  padding-top: 1.5rem;
+}
+
+.ResultsDisplay_transcriptionSection__SfK_l h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.ResultsDisplay_transcriptionContent__OnUCU {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  line-height: 1.7;
+  color: #2c3e50;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ecf0f1;
+}
+

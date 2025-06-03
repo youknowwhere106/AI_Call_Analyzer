@@ -1,0 +1,169 @@
+.container {
+  margin-top: 2rem;
+}
+
+.resultsCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.overallScore {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.scoreCircle {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.percentage {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.scoresSection {
+  margin-bottom: 2rem;
+}
+
+.scoresSection h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.scoresGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.scoreItem {
+  padding: 1rem;
+  border: 1px solid #ecf0f1;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.scoreHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.parameterName {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.scoreValue {
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.scoreGood {
+  background: #d5f4e6;
+  color: #27ae60;
+}
+
+.scoreOkay {
+  background: #fef9e7;
+  color: #f39c12;
+}
+
+.scorePoor {
+  background: #fadbd8;
+  color: #e74c3c;
+}
+
+.scoreBar {
+  height: 6px;
+  background: #ecf0f1;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.scoreBarFill {
+  height: 100%;
+  transition: width 0.5s ease;
+  border-radius: 3px;
+}
+
+.scoreBarFill.scoreGood {
+  background: #27ae60;
+}
+
+.scoreBarFill.scoreOkay {
+  background: #f39c12;
+}
+
+.scoreBarFill.scorePoor {
+  background: #e74c3c;
+}
+
+.feedbackSection {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.feedbackItem h3 {
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.feedbackContent {
+  background: #f8f9fa;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+.transcriptionSection {
+  border-top: 1px solid #ecf0f1;
+  padding-top: 1.5rem;
+}
+
+.transcriptionSection h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.transcriptionContent {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  line-height: 1.7;
+  color: #2c3e50;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ecf0f1;
+}

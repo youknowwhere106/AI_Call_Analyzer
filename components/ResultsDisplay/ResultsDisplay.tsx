@@ -5,6 +5,17 @@ interface ResultsDisplayProps {
   result: AnalysisResult
 }
 
+// Move this to a constants file if reused
+const SCORING_PARAMETERS: Record<string, number> = {
+  callEtiquette: 5,
+  callDisclaimer: 5,
+  correctDisposition: 5,
+  callClosing: 5,
+  fatalIdentification: 5,
+  fatalTapeDiscloser: 10,
+  fatalToneLanguage: 15,
+}
+
 export default function ResultsDisplay({ result }: ResultsDisplayProps) {
   const getScoreColor = (score: number, maxScore: number) => {
     const percentage = (score / maxScore) * 100
@@ -13,20 +24,8 @@ export default function ResultsDisplay({ result }: ResultsDisplayProps) {
     return styles.scorePoor
   }
 
-  const totalPossibleScore = Object.values(result.scores).reduce((sum, score) => {
-    // Assuming max scores based on common parameters
-    const maxScores: Record<string, number> = {
-      greeting: 5,
-      collectionUrgency: 15,
-      professionalism: 10,
-      clarity: 10,
-      empathy: 8,
-      resolution: 12
-    }
-    return sum + (maxScores[Object.keys(result.scores)[Object.values(result.scores).indexOf(score)]] || 10)
-  }, 0)
-
-  const actualScore = Object.values(result.scores).reduce((sum, score) => sum + score, 0)
+  const actualScore = Object.entries(result.scores).reduce((sum, [key, value]) => sum + value, 0)
+  const totalPossibleScore = Object.entries(result.scores).reduce((sum, [key]) => sum + (SCORING_PARAMETERS[key] || 5), 0)
   const overallPercentage = Math.round((actualScore / totalPossibleScore) * 100)
 
   return (
@@ -47,11 +46,7 @@ export default function ResultsDisplay({ result }: ResultsDisplayProps) {
           <h3>Parameter Scores</h3>
           <div className={styles.scoresGrid}>
             {Object.entries(result.scores).map(([parameter, score]) => {
-              const maxScore = parameter === 'collectionUrgency' ? 15 : 
-                              parameter === 'resolution' ? 12 : 
-                              parameter === 'professionalism' || parameter === 'clarity' ? 10 :
-                              parameter === 'empathy' ? 8 : 5
-              
+              const maxScore = SCORING_PARAMETERS[parameter] || 5
               return (
                 <div key={parameter} className={styles.scoreItem}>
                   <div className={styles.scoreHeader}>
@@ -91,7 +86,7 @@ export default function ResultsDisplay({ result }: ResultsDisplayProps) {
           </div>
         </div>
 
-        {/* Transcription if available */}
+        {/* Transcription */}
         {result.transcription && (
           <div className={styles.transcriptionSection}>
             <h3>📝 Transcription</h3>
